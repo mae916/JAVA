@@ -1,0 +1,109 @@
+1. 프로그램 - 컴퓨터에게 일을 시키는 명령의 집합
+
+2. 컴파일 - 실행 속도가 빠르다
+   (프로그램 언어(사람이 인식할 수 있는 문장) -> 기계가 인식할 수 있는 언어)
+   
+   인터프리터 언어 -> 한줄 한줄 해석
+
+3. 장점
+플랫폼에 종속되지 않는 프로그램을 개발 할 수 있다.
+C, C++ 컴파일러(윈도우즈 컴파일러, 리눅스 컴파일러)
+자바코드 -> JVM (중간언어 컴파일 .class) -> 플랫폼에 맞는 바이트코드로 변환
+JVM(Java Virtual Machine)
+
+객체 지향 언어
+모든 프로그램이 클래스 형태로 구현 되어 있다.
+
+객체 - 여러객체의 협력을 통해 프로그램을 구현하는 것 입니다.
+(상호작용)
+
+객체-> 사물, 대상(Object)
+게시판 - 게시판 관련 객체 회원관련객체
+       - 게시글 작성 + 회원 데이터
+       - 게시글 조회(게시판 객체) + 회원의 접속권한(회원객체)
+
+프로그램이 안정적이다.
+C,C++ 메모리에 올리면 프로그래머가 적절하게 메모리에서 제거
+객체 -> 힙 -> 제거 프로그래머(메모리 누수 성능 저하)
+JAVA - 메모리 관리를 자동 관리(객체 --> 힙 --> 자동으로 제거)
+            가비지콜렉터
+    Person person1 = new Person();
+    Person person2 = new Person();
+
+    person2 = person1
+
+    person2의 기존 인스턴스와 연결X
+
+
+
+포인터를 사용하지 않는다.
+
+풍부한 기능을 제공하는 오픈소스다.
+JDK - Java Development Kit
+오픈소스 - 15
+
+8버전
+
+자바 사용범위
+웹서버, 앱(안드로이드앱),......
+데스크톱 애플리케이션(java.awt, javax.swing)
+
+
+설치
+환경 변수
+JAVA_HOME - 설치되어 있는 JDK 경로 (C:\Program Files\Java\jdk-16.0.2)
+%JAVA_HOME%
+
+CLASS_PATH = %JAVA_HOME%lib;.
+
+
+에디터 - 이클립스 설치방법
+검색: eclipse zip download
+Eclipse IDE for Java Developers - window버전 다운로드
+압축파일 풀고 eclipse 실행파일 c:로 옮김 바로가기 생성후 java 폴더에 java_source  폴더생성후 안에 옮겨놓기
+
+잘 설치 됐는지 확인하는법
+- cmd 창에 java -version 쳐보면 됨
+
+
+java에서 package는 폴더임
+
+폴더1.폴더2 -> 폴더1의 하위 폴더인 폴더2
+
+C:\Users\6-6\Desktop\HJ\java_source\exam01\bin>java first.second.hello
+                                                    폴더  하위폴더  파일
+결과-->
+        Hello Java!
+
+src - 자바소스(.java)
+bin - 컴파일된 자바 클래스 파일(.class)
+
+java -> 컴파일된 class 파일을 실행하는 명령 프로그램
+        java 패키지명.파일명
+
+javac -> 컴파일하여 class 파일을 만드는 명령 프로그램
+
+세미콜론(;) - 문장이 끝나는 지점에 위치
+
+주석
+한줄 주석 //
+여러줄 주석 /* ~ */
+
+36p - 1분복습
+
+1) //
+2) ;
+3) }
+
+객체 지향언어
+ 
+ JVM 
+ 
+ 자바소스 -> JVM(.class 컴파일 - 중간 언어) -> 플랫폼에 맞는 바이트 코드로 변환
+ 
+ JDK - Java Development Kit
+ 
+ JRE - Java Runtime Enviroment -> 자바 프로그램이 실행되는 자바실행 환경
+ 
+ first.second - 패키지
+ hello3.java
