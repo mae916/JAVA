@@ -10,7 +10,7 @@ public class Student {
 		return studentName;
 	}
 	
-	public void setStudentName(String Name) {
-		this.studentName = Name;
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
 	}
 }

@@ -4,18 +4,18 @@ public class Person {
 	private String name;
 	private int age;
 	
-	public Person() {};
+	public Person() {}
 	
 	public Person(int i) {
-		System.out.println("매개변수 정수 : " +  i);
+		System.out.println("매개변수 정수 : " + i);
 	}
 	
 	public Person(String name) {
-		System.out.println("매개변수 문자열 : " +  name);
+		System.out.println("매개변수 문자열 : " + name);
 	}
 	
 	public Person(String name, int i) {
-		System.out.println(name + ":" +  i);
+		System.out.println(name + ": " + i);
 	}
 	
 	public String getName() {
@@ -33,5 +33,6 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
 	
 }

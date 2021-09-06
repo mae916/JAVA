@@ -21,4 +21,8 @@ public class GenericPrinter<T extends Material> {
 	public String toString() {
 		return material.toString();
 	}
+	
+	public void printing() {
+		material.doPrinting();
+	}
 }

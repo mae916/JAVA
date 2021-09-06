@@ -1,6 +1,6 @@
 package chapter12_1;
 
-public class Powder extends Material {
+public class Powder  extends Material {
 	public void doPrinting() {
 		System.out.println("Powder로 프린팅");
 	}
