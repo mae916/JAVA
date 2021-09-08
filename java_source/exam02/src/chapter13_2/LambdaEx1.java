@@ -28,4 +28,8 @@ public class LambdaEx1 {
 		System.out.println(p.print("Å×½ºÆ®"));
 		
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 29b43c87ffeb5a64305c0bdd950d4f5524439b97

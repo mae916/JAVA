@@ -173,6 +173,10 @@ Collection 인터페이스
 	Set 인터페이스(집합 자료 구조)
 		- 순서 유지 X 
 		- 중복 X 
+<<<<<<< HEAD
+=======
+		- 중복 여부 체크  -> equals, hashCode -> 논리적 동일 -> 인스턴스 중복 
+>>>>>>> 29b43c87ffeb5a64305c0bdd950d4f5524439b97
 		
 		HashSet 
 		TreeSet (HashSet + 정렬  
@@ -193,4 +197,26 @@ Map 인터페이스
 		Set은 Collection 인터페이스를 상속 -> Iterator가 있음
 		
 	HashMap
+<<<<<<< HEAD
 	TreeMap(HashMap + 정렬)
+=======
+	TreeMap(HashMap + 정렬)
+	 
+	 
+	 427 - 10, 15
+
+     ++++++++++++++++++++++++++
+
+     446
+     Q1. 컬렉션 프레임워크
+     JDK java Development Kit
+     Q2. 제네릭 클래스명
+        -> 클래스명 <T>
+        -> 인스턴스가 생성될때 결정 -> static으로 사용불가
+        -> Object -> T로 입력된 자료형으로 다운 캐스팅
+        -> ㅆT extends 제한할 참조자료형
+
+        메서드 내부에서
+        public static <T,V> double....
+        -> 호출 되는 시점에서 결정
+>>>>>>> 29b43c87ffeb5a64305c0bdd950d4f5524439b97

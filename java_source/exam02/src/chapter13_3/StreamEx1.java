@@ -21,4 +21,8 @@ public class StreamEx1 {
 		int sum2 = Arrays.stream(nums).mapToInt(x -> x).sum();
 		System.out.println(sum2);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 29b43c87ffeb5a64305c0bdd950d4f5524439b97
