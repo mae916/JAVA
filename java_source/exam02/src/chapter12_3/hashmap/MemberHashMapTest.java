@@ -15,5 +15,6 @@ public class MemberHashMapTest {
 		
 		list.removeMember(1004);
 		list.showMembers();
-		}
+		
 	}
+}

@@ -3,7 +3,7 @@ package chapter12_3.linkedlist;
 import chapter12_3.Member;
 
 public class MemberLinkedListTest {
-	public static void main(String[]args) {
+	public static void main(String[] args) {
 		MemberLinkedList list = new MemberLinkedList();
 		
 		list.addMember(new Member(1001, "ÀÌ¸§1"));

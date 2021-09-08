@@ -1,35 +1,34 @@
 package chapter12_3.treeset;
 
-import java.util.Iterator;
 import java.util.TreeSet;
+import java.util.Iterator;
 import chapter12_3.Member;
 
-/*
- * 추가, 삭제, 조회
+/**
+ *  추가, 삭제, 조회
  */
 public class MemberTreeSet {
 	private TreeSet<Member> memberList;
 	
 	public MemberTreeSet() {
-		memberList = new TreeSet<Member>();
-		
+		memberList = new TreeSet<Member>(new Member());
 	}
 	
-	//추가
+	/** 추가 */
 	public void addMember(Member member) {
 		memberList.add(member);
 	}
 	
-	//삭제
+	/** 삭제 */
 	public boolean removeMember(int memberId) {
-		Iterator<Member>ir = memberList.iterator();
-		/*
-		 * hasNext()
+		Iterator<Member> ir = memberList.iterator();
+		/**
+		 * hasNext() 
 		 * next()
 		 */
 		while(ir.hasNext()) {
 			Member member = ir.next();
-			if(member.getMemberId() == memberId) {
+			if (member.getMemberId() == memberId) {
 				memberList.remove(member);
 				return true;
 			}
@@ -39,7 +38,7 @@ public class MemberTreeSet {
 	}
 	
 	public void showMembers() {
-		for(Member member : memberList) {
+		for (Member member : memberList) {
 			System.out.println(member);
 		}
 	}

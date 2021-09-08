@@ -12,5 +12,11 @@ public class CalculatorTest {
 		//Calc calc2 = new Calculator(); 추상클래스라 생성X
 		
 		System.out.println(calc.add(num1, num2));
+		
+		calc.description();
+		
+		int[]arr = {1,2,3,4,5};
+		int sum = Calc.total(arr);
+		System.out.println(sum);
 	}
 }

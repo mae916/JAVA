@@ -1,0 +1,68 @@
+P512
+1. 스트림
+- 가상의 통로  -> 입력, 출력 
+
+
+1) 입력스트림과 출력 스트림 
+입력 스트림 InputStream, Reader 
+				- FileInputStream 
+				- FileReader 
+				- BufferedInputStream
+				- BufferedReader 
+				- inputStreamReader 
+				
+출력 스트림 OuputStream, Writer  
+				- FileOutputStream 
+				- FileWriter 
+				- BufferedOutputStream 
+				- BufferedWriter 
+				- OutputStreamWriter
+				
+2) 바이트 단위 스트림과 문자단위 스트림 
+	바이트 단위 스트림(1바이트)
+		- FileInputStream, FileOutputStream, BufferedInputStream, BufferedOutputStream 
+	
+	문자단위 스트림(2바이트)
+		- FileReader, FileWriter, BufferedReader, bufferedWriter 
+	
+3) 기반 스트림과 보조스트림
+	기반스트림 
+		- 직접 읽고 쓰는 스트림
+		FileInputStream, FileReader , FileOutputStream, FileWriter
+		
+	보조스트림 
+		- 직접 읽고 쓰는 기능 X -> 기반 스트림에 + 기능을 추가 
+		InputStreamReader, OutputStreamWriter - 바이트 단위 스트림 -> 문자 단위 스트림 변경 
+		BufferedInputStream, BufferedOutputStream
+		BufferedReader, BufferedWriter 
+		
+		
+	커피 
+		 에스프레소(커피 + 보조 재료 ..)
+		바닐라라떼(커피 + 우유 + 바닐라 향 ... )
+		카푸치노(커피 + 우유 + .... )
+	
+
+2. 표준입출력
+	콘솔에서 입력, 출력 
+	System 클래스
+		static PrintStream out - 콘솔에서 출력 
+		static InputStream in  - 콘솔에서 입력 
+		static PrintStream err - 콘솔에서 에러를 출력 
+		
+		BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
+		
+		-> 문자 단위로 쉽게 입력 받을 수 있는  클래스
+		Scanner 클래스
+		
+		
+
+3. 바이트 단위 스트림
+
+4. 문자단위 스트림
+
+5. 보조스트림
+
+6. 직렬화
+
+7. 기타 
