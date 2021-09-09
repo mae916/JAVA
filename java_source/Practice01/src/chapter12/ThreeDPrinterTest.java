@@ -1,11 +1,20 @@
 package chapter12;
 
 public class ThreeDPrinterTest {
+	
 	public static void main(String[]args) {
-		ThreeDPrinter printer = new ThreeDPrinter();
 		
+		ThreeDPrinter<Powder> printer = new ThreeDPrinter<Powder>();
 		printer.setMaterial(new Powder());
+		Powder powder = printer.getMaterial();
+		System.out.println(printer);
 		
-		Powder powder = (Powder) printer.getMaterial();
+		ThreeDPrinter<Plastic> printerPlastic = new ThreeDPrinter<Plastic>();
+		printerPlastic.setMaterial(new Plastic());
+		Plastic plastic = printerPlastic.getMaterial();
+		System.out.println(printerPlastic);
+		
+		printerPlastic.printing();
+		
 	}
 }

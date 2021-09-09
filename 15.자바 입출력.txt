@@ -54,15 +54,72 @@ P512
 		
 		-> 문자 단위로 쉽게 입력 받을 수 있는  클래스
 		Scanner 클래스
+			1) 문자단위로 입력을 받을 수 있고 
+			2) 입력 받는 데이터의 자료형을 다양하게 할 수 있다.
 		
-		
+		Console 클래스
+			System.console();
+			String readLine();
+			char[] readPassword();
 
 3. 바이트 단위 스트림
-
+	InputStream
+		- FileInputStream 
+		- ByteArrayInputStream 
+		- FilterInputStream  - 보조 스트림의 상위 클래스
+		
+		offset -> 시작점
+		length -> 길이
+		
+	OutStream 
+		- FileOutputStream 
+		- ByteArrayOutputStream
+		- FilterOutputStream - 보조 스트림의 상위클래스
+		
+	바이트 스트림 -> 문자 처리(2바이트 문자) -> 깨짐 
+	
 4. 문자단위 스트림
-
+	Reader 
+		- FileReader
+	
+	Writer 
+		- FileWriter 
+	
 5. 보조스트림
+	기반 스트림 - 직접 읽고, 쓰는 기능 
+	보조 스트림 - 직접 읽고, 쓰는 기능 X -> 기반스트림을 보조 해주는 역할
+	
+	FilterInputStream, FilterOutputStream
+		
+	BufferedInputStream, BufferedOutputStream -  바이트 단위 스트림에 버퍼를 제공 
+	(8,192 -> 8kb)
+	
+	InputStreamReader, OutputStreamReader  - 바이트 단위 스트림 -> 문자 단위 스트림 
+	
+	BufferedReader, BufferedWriter -> 문자 단위 스트림에 버퍼를 제공 
+	
+	DataInputStream, DataOuputStream -> 자료형 그 자체로 데이터를 저장, 읽을수 있게 해주는 보조 스트림
+	
+	ObjectInputStream, ObjectOutStream  -> 인스턴스를 상태 그대로 저장, 읽을때
+	
+	
+	//BufferedInputStream bis = new BufferedInputStream(new DataInputStream(System.in))
+
 
 6. 직렬화
-
+	ObjectInputStream
+	
+	ObjectOutputStream
+	
+	Serializble -> 인스턴스 전체를 저장
+	
+	
+	Externalizable 인터페이스
+	
 7. 기타 
+	1) File 클래스
+	2) RandomAccessFile 클래스
+		- 파일 출력, 입력을 동시에 할 수 있는 클래스 
+
+
+	EOF -> End Of File
