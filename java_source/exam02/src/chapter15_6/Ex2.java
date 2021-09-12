@@ -15,6 +15,7 @@ public class Ex2 {
 		file.writeUTF("안녕하세요.");
 		System.out.println("파일의 위치 : " + file.getFilePointer());
 		
+
 		file.seek(0);
 		System.out.println("파일의 위치 : " + file.getFilePointer());
 		int num1 = file.readInt();

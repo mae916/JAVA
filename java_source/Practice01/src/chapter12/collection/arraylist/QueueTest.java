@@ -3,6 +3,7 @@ package chapter12.collection.arraylist;
 import java.util.ArrayList;
 
 class MyQueue {
+	
 	private ArrayList<String> arrayQueue = new ArrayList<>();
 	
 	public void enQueue(String data) {

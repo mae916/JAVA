@@ -9,7 +9,7 @@ public class StudentList implements Serializable {
 
 	private ArrayList<Student> list;
 	
-	private String name3;
+	private String name5;
 	private int num;
 	
 	public StudentList() {
