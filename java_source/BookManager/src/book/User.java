@@ -7,12 +7,19 @@ public class User  {
 	private int userId;
 	private String userName;
 	private String userPhoneNumer;
-	private boolean checkOut;	 
-	//private Date checkOutDate;
-	//private Date returnDate;
-	
+	private int checkOutBSum;	  //boolean true처리된(대출) Book의 checkOut의 갯수(true 갯수?)
+
+
 	public int getUserId() {
 		return userId;
+	}
+
+	public int getCheckOutBSum() {
+		return checkOutBSum;
+	}
+
+	public void setCheckOutBSum(int checkOutBSum) {
+		this.checkOutBSum = checkOutBSum;
 	}
 
 	public void setUserId(int userId) {
@@ -53,7 +60,7 @@ public class User  {
 	}
 */
 
-	public User(int userId, String userName, String userPhoneNumer) {
+	public User(int userId, String userName, String userPhoneNumer, int checkOutBSum) {
 		this.userId = userId;
 		this.userName = userName;
 		this.userPhoneNumer = userPhoneNumer;
@@ -62,7 +69,7 @@ public class User  {
 	}
 	
 	public String toString() {
-		return userId + "    |    " + userName + "    |    " + userPhoneNumer;
+		return userId + "    |    " + userName + "    |    " + userPhoneNumer + "    |    " + checkOutBSum;
 	}
 	
 	

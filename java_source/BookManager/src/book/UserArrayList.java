@@ -30,13 +30,15 @@ public class UserArrayList {
 		return false;
 	}
 	
+
+	
 	//대출 상태
-	public boolean isUseBook(boolean CheckOutB) {
-		if(CheckOutB)
+	public void  isUseBook(boolean CheckOutB) {
+		if(CheckOutB) {
+			
+			CheckOutB = false;
+		}
 	}
-	
-	
-	
 	
 	public void showAllUser() {
 		System.out.println(" 이용자번호     |     이름     |     휴대폰 번호     |     대출여부     |     대출일자     |     반납기한 ");

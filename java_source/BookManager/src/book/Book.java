@@ -2,14 +2,24 @@ package book;
 
 public class Book {
 	
-	private String bookNumSign;
-	private int bookNumber;
-	private String bookName;
-	private String author;
-	private String publisher;
-	private boolean checkOut;
-	private String callNumber;
+	protected String bookNumSign;
+	protected int bookNumber;
+	protected String bookName;
+	protected String author;
+	protected String publisher;
+	protected int checkOut; //BooksOnUse
+	protected String callNumber;
 	
+	public Book(String bookNumSign, int bookNumber, String bookName, String author, String publisher, int checkOut, String callNumber) {
+		this.bookNumSign = bookNumSign;
+		this.bookNumber = bookNumber;
+		this.bookName = bookName;
+		this.author = author;
+		this.publisher = publisher;
+		this.checkOut = checkOut;
+		this.callNumber = callNumber;
+	}
+
 	public String getBookNumSign() {
 		return bookNumSign;
 	}
@@ -50,11 +60,11 @@ public class Book {
 		this.publisher = publisher;
 	}
 
-	public boolean isCheckOut() {
+	public int getCheckOut() {
 		return checkOut;
 	}
 
-	public void setCheckOut(boolean checkOut) {
+	public void setCheckOut(int checkOut) {
 		this.checkOut = checkOut;
 	}
 
@@ -66,16 +76,6 @@ public class Book {
 		this.callNumber = callNumber;
 	}
 
-	public Book( String bookNumSign, int BookNumber, String BookName, String author, String Publisher, boolean checkOut, String callNumber) {
-		this.bookNumSign = bookNumSign;
-		this.bookNumber = BookNumber;
-		this.bookName = BookName;
-		this.author = author;
-		this.publisher = Publisher;
-		this.checkOut = checkOut;
-		this.callNumber = callNumber;
-	}
-	
 	public String toString() {
 		return bookNumSign +bookNumber + "    |    " + bookName + "    |    " + author + "    |    " + publisher + "    |    " + checkOut + "    |    " +  callNumber;
 	}

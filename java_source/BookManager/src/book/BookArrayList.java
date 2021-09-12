@@ -30,6 +30,15 @@ public class BookArrayList {
 				return false;
 			}
 			
+			//대출권수			
+			public checkOutUser() {
+				for(int i = 0; i < bookList.size(); i++) { 
+					 Book book = bookList.get(i);
+					 int checkOut = book.isCheckOut();
+					 
+					}
+				}
+					 
 			//대출상태
 			
 			public void showAllBook() {
