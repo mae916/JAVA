@@ -7,10 +7,10 @@ public class Book {
 	protected String bookName;
 	protected String author;
 	protected String publisher;
-	protected int checkOut; //BooksOnUse
+	protected boolean checkOut; //BooksOnUse
 	protected String callNumber;
 	
-	public Book(String bookNumSign, int bookNumber, String bookName, String author, String publisher, int checkOut, String callNumber) {
+	public Book(String bookNumSign, int bookNumber, String bookName, String author, String publisher, boolean checkOut, String callNumber) {
 		this.bookNumSign = bookNumSign;
 		this.bookNumber = bookNumber;
 		this.bookName = bookName;
@@ -60,11 +60,11 @@ public class Book {
 		this.publisher = publisher;
 	}
 
-	public int getCheckOut() {
+	public boolean isCheckOut() {
 		return checkOut;
 	}
 
-	public void setCheckOut(int checkOut) {
+	public void setCheckOut(boolean checkOut) {
 		this.checkOut = checkOut;
 	}
 
@@ -77,35 +77,6 @@ public class Book {
 	}
 
 	public String toString() {
-		return bookNumSign +bookNumber + "    |    " + bookName + "    |    " + author + "    |    " + publisher + "    |    " + checkOut + "    |    " +  callNumber;
+		return bookNumSign +bookNumber + "   |    " + bookName + "   |    " + author + "   |    " + publisher + "   |    " + checkOut + "   |    " +  callNumber;
 	}
-	
-	
-	
-	/*
-	 * HashSet
-	 * 
-	@Override
-	public int hashCode() {
-		return bookNumber;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if(obj instanceof Book) {
-			Book book = (Book)obj;
-			
-			if(this.bookNumber == book.bookNumber) {
-				return true;
-		}
-	} else return false;
-		return false;
-}
-
-	//등록번호로 정렬
-	@Override
-	public int compareTo(Book book) {
-		return (this.bookNumber - book.bookNumber);
-	}
-	*/
 }

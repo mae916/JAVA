@@ -1,25 +1,24 @@
 package book;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
-public class User  {
+public class User {
 	
 	private int userId;
 	private String userName;
-	private String userPhoneNumer;
-	private int checkOutBSum;	  //boolean true처리된(대출) Book의 checkOut의 갯수(true 갯수?)
-
-
+	private String userPhoneNumber;
+	  //boolean true 처리된(대출) Book의 checkOut의 갯수(true 갯수?)
+	
+	public User(int userId, String userName, String userPhoneNumber) {
+		this.userId = userId;
+		this.userName = userName;
+		this.userPhoneNumber = userPhoneNumber;
+		
+	}
+	
 	public int getUserId() {
 		return userId;
-	}
-
-	public int getCheckOutBSum() {
-		return checkOutBSum;
-	}
-
-	public void setCheckOutBSum(int checkOutBSum) {
-		this.checkOutBSum = checkOutBSum;
 	}
 
 	public void setUserId(int userId) {
@@ -35,46 +34,15 @@ public class User  {
 	}
 
 	public String getUserPhoneNumer() {
-		return userPhoneNumer;
+		return userPhoneNumber;
 	}
 
-	public void setUserPhoneNumer(String userPhoneNumer) {
-		this.userPhoneNumer = userPhoneNumer;
-	}
-
-	/*
-	public Date getCheckOutDate() {
-		return checkOutDate;
-	}
-
-	public void setCheckOutDate(Date checkOutDate) {
-		this.checkOutDate = checkOutDate;
-	}
-
-	public Date getReturnDate() {
-		return returnDate;
-	}
-
-	public void setReturnDate(Date returnDate) {
-		this.returnDate = returnDate;
-	}
-*/
-
-	public User(int userId, String userName, String userPhoneNumer, int checkOutBSum) {
-		this.userId = userId;
-		this.userName = userName;
-		this.userPhoneNumer = userPhoneNumer;
-		//this.checkOutDate = new Date();
-		//this.returnDate = new Date();
+	public void setUserPhoneNumber(String userPhoneNumber) {
+		this.userPhoneNumber = userPhoneNumber;
 	}
 	
 	public String toString() {
-		return userId + "    |    " + userName + "    |    " + userPhoneNumer + "    |    " + checkOutBSum;
+		return userId + "   |    " + userName + "   |    " + userPhoneNumber + "   |    ";
 	}
-	
-	
-	
-	
-	
-	
+
 }

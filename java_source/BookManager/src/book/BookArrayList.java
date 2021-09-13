@@ -29,20 +29,16 @@ public class BookArrayList {
 				System.out.println(booknumber + "가 존재하지 않습니다.");
 				return false;
 			}
-			
-			//대출권수			
-			public checkOutUser() {
-				for(int i = 0; i < bookList.size(); i++) { 
-					 Book book = bookList.get(i);
-					 int checkOut = book.isCheckOut();
-					 
-					}
-				}
-					 
+				 
 			//대출상태
+				
+			// String a = (isCheckOut()) ? "대출가능" : "대출불가";
+			
+			
+			
 			
 			public void showAllBook() {
-				System.out.println(" 등록번호     |     서명     |     저자     |     출판사     |     청구기호 ");
+				System.out.println(" 등록번호   |    서명   |    저자   |    출판사   |    대출여부   |    청구기호 ");
 				for(Book book : bookList) {
 					System.out.println(book);
 				}
