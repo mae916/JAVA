@@ -1,4 +1,4 @@
-package book;
+package book02;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -33,6 +33,12 @@ public class BookArrayList {
 			//대출상태
 			// String a = (isCheckOut()) ? "대출가능" : "대출불가";
 		
+			//도서검색
+			//List<String> list = new ArrayList<>(Arrays.asList("Hello", "Hi"));
+			// 포함 여부 체크
+			boolean isContainsHello = bookList.contains("설명서");
+			boolean isContainsBye = bookList.contains("행복");
+			
 			public void showAllBook() {
 				System.out.println(" 등록번호   |    서명   |    저자   |    출판사   |    대출여부   |    청구기호 ");
 				for(Book book : bookList) {
