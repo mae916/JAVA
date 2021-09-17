@@ -1,0 +1,26 @@
+Wrapper 클래스
+1. 자료형을 위한 클래스
+각 자료형 별 -> 편의기능 모음
+
+-> 기본 자료형마다 존재
+int --> Integer 
+long -> Long 
+float -> Float 
+double -> Double 
+byte -> Byte
+short -> Short 
+
+boolean -> Boolean
+char -> Character 
+
+
+
+2. Integer 클래스 사용하기
+
+3.오토박싱과 언박싱
+
+오토박싱
+기본 자료형 -> Wrapper 클래스
+
+언박싱
+Wrapper -> 기본 자료형 
