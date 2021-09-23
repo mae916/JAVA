@@ -1,9 +1,42 @@
-1 제네릭이란?
-   어떤 값이 하나의 참조 자료형이 아닌 여러 참조 자료형을 사용할 수 있도록 프로그래밍 하는 것
- 
-2. ThreeDPrinter
+콜레션 프레임워크
+
+Collection 인터페이스
+	List 인터페이스 (순차 자료 구조) - 배열객체
+		순서가 있는 자료 구조, 중복 허용
+		ArrayList 클래스 - 물리적 배열 -> 순서 -> 물리적 순서
+						     -> 데이터 추가 삭제 -> 새로운 배열 생성 -> 재 조합 
+							 -> 메모리 낭비
+							 -> 데이터 추가, 수정, 삭제 불리
+							 -> 물리적 순서 -> 조회시 빠르다
+		LinkedList 클래스 -> 논리적 순서
+						       -> 요소들 마다 다음 요소의 주소를 포함
+							   -> 물리적 위치 X -> 논리적 위치는 동일 
+							   -> 데이터 추가, 수정, 삭제 -> 유리
+							   -> 조회시는 ArrayList 보다는 불리
+		
+		Vector 클래스
+		
+		Stack, Queue
+	
+	Set 인터페이스 (집합 자료 구조)
+		순서가 없는 자료 구조, 중복이 안되는 자료 구조
+		HashSet  -> Object - equals, hashcode
+		TreeSet - HashSet + 정렬(java.lang.Comparable -> compareTo  양수(오름차순), 0, 음수(내림차순) -> 이진트리 방식
+										  java.util.Comparator -> compare
+		
+		정렬의 방식을 반드시 명시
+		
+Map 인터페이스
+(Key - Value 쌍의 자료 구조)
+Key -> Value를 찾기 위한 데이터
+Key -> 유일한 값(Set 자료형(집합))
+
+Value -> 중복 -> Collection 
 
 
-3. <T extends 클래스>
 
-4. 제네릭 메서드 
+	HashMap 
+	TreeMap - HashMap + 정렬(키 값)
+				정렬(java.lang.Comparable -> compareTo  양수(오름차순), 0, 음수(내림차순) -> 이진트리 방식
+				 java.util.Comparator -> compare
+	Hashtable - Properties
