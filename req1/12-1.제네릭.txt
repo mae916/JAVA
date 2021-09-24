@@ -35,8 +35,8 @@ Value -> 중복 -> Collection
 
 
 
-	HashMap 
-	TreeMap - HashMap + 정렬(키 값)
+	- HashMap 
+	- TreeMap - HashMap + 정렬(키 값)
 				정렬(java.lang.Comparable -> compareTo  양수(오름차순), 0, 음수(내림차순) -> 이진트리 방식
 				 java.util.Comparator -> compare
-	Hashtable - Properties
+	-Hashtable - Properties
