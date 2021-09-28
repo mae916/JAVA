@@ -23,7 +23,7 @@ public class Ex3 {
 				String publisher = rs.getString("publisher");
 				int price = rs.getInt("price");
 				
-				System.out.println("bookid = " + bookid + ", bookname = " + bookname + ", publisher = " + publisher + ", price = " + +price);
+				System.out.println("bookid = " + bookid + ", bookname = " + bookname + ", publisher = " + publisher + ", price = " +price);
 				
 			}
 			

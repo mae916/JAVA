@@ -7,7 +7,7 @@ public class Ex1 {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		String user = "root";
-		String password = "1234";
+		String password = "aA!12345";
 		String url = "jdbc:mysql://localhost:3306/madang"; // ¾Ï±â
 		
 		

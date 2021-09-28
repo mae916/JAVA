@@ -8,7 +8,7 @@ public class Ex2 {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Properties props = new Properties();
 		props.put("user", "root");
-		props.put("password", "1234");
+		props.put("password", "aA!12345");
 		
 		String url = "jdbc:mysql://localhost:3306/madang";
 		
